@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary meta tags   -->
+
+    <title>Horizon</title>
+    <meta name="title" content="Horizon" />
+    <meta name="description" content="Horizon is a weather app" />
+
+    <!-- Favicon  -->
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+
+    <!-- google Font link  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Css File  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Custom script files   -->
+
+    <script src="app.js" type="module"></script>
+    <script src="route.js" type="module"></script>
+  </head>
+  <!-- HEADER  -->
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="weather app-01.svg" width="205" height="58" alt="logo" />
+      </a>
+
+      <div class="search-view" data-search-view>
+        <div class="search-wrapper">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search city..."
+            autocomplete="off"
+            class="search-field"
+            data-search-field
+          />
+
+          <span class="m-icon leading-icon">search</span>
+          <button
+            class="icon-btn leading-icon has-state"
+            aria-label="close search"
+            data-search-toggler>
+            <span class="m-icon">arrow_back</span>
+          </button>
+        </div>
+
+        <div class="search-result" data-search-result></div>
+      </div>
+
+      <div class="header-action">
+        <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+            <span class="m-icon icon">search</span>
+        </button>
+
+  <a href="#/current-location" class="btn-primary has-state" data-current-location-btn >
+ <span class="m-icon">my_location</span>
+
+ <span class="span">Current Location</span>
+  </a>
+
+      </div>
+    </div>
+  </header>
+
+
+<main>
+  <article class="container" data-container>
+    <div class="content-left">
+
+    <!-- Current Weather  -->
+
+<section class="section current-weather" aria-label="current-weather" data-current-weather></section>
+
+
+<!-- FORECAST  -->
+
+<section class="section forecast" aria-labelledby="forecast" data-5-day-forecast></section>
+
+</div>
+
+<div class="content-right">
+
+  <!-- HIGHLIGHTS  -->
+
+  <section class="section highlights" aria-labelledby="highlights-label" data-highlights></section>
+
+
+  <!-- HOURLY FORECAST  -->
+
+
+  <section class=" section hourly-forecast" aria-label="hourly-forecast" data-hourly-forecast></section>
+
+<!-- FOOTER  -->
+
+<footer class="footer">
+
+  <p class="body-3">
+    Created By <a href="https://discord.gg/Zcvu5wB5cr"> CODY NERDS</a>
+  </p>
+
+</footer>
+
+</div>
+
+
+<div class="loading" data-loading></div>
+
+
+
+</article>
+
+</main>
+
+<!-- Main End  -->
+
+<!-- Error Section  -->
+
+<section class="error-content" data-error-content>
+
+  <h2 class="heading">404</h2>
+
+  <p class="body-1">Page not Found</p>
+
+  <a href="#/weather?lat=24.906&lon=67.082" class="btn-primary">
+
+    <span class="span">Go Home</span>
+  </a>
+</section>
+
+
+  </body>
+</html>
