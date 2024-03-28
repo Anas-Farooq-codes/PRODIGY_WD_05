@@ -18,7 +18,7 @@ To run this weather application locally or integrate it into your project, follo
 
 1. **Clone the Repository:**
 
-- git clone: https://github.com/hitmananas/PRODIGY_WD_05.git
+- git clone https://github.com/hitmananas/PRODIGY_WD_05.git
 
 2. **Open the Application:**
 - Open the `index.html` file in your preferred web browser.
