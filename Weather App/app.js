@@ -139,7 +139,7 @@ card.innerHTML = `
 <div class="wrapper-2">
   <p class="heading">${parseInt(temp)}&deg;<sup>c</sup></p>
 
-  <img src="/icons/${icon}.png" width=110" height="110" alt="${description}" class="weather-icon">
+  <img src="/Weather App/icons/${icon}.png" width=110" height="110" alt="${description}" class="weather-icon">
 </div>
 <p class="body-3">${description}</p>
 
@@ -375,7 +375,7 @@ tempLi.innerHTML = `
   ${module.getHours(dateTimeUnix, timezone)}
 </p>
 
-<img src="/icons/${icon}.png" width="70" height="70" loading="lazy" alt="${description}" class="weather-icon" title="${description}">
+<img src="/Weather App/icons/${icon}.png" width="70" height="70" loading="lazy" alt="${description}" class="weather-icon" title="${description}">
 
 <p class="body-3">${parseInt(temp)}&deg;</p>
 
@@ -394,7 +394,7 @@ windLi.innerHTML = `
     ${module.getHours(dateTimeUnix, timezone)}
   </p>
 
-  <img src="/icons/direction.png" width="48" height="48" loading="lazy" alt="direction" class="weather-icon" style ="transform: rotate(${windDirection - 180}deg)">
+  <img src="/Weather App/icons/direction.png" width="48" height="48" loading="lazy" alt="direction" class="weather-icon" style ="transform: rotate(${windDirection - 180}deg)">
 
   <p class="body-3">${parseInt(module.mps_to_kmh(windSpeed))} km/h</p>
 
@@ -431,7 +431,7 @@ for (let i = 7, len = forecastList.length; i < len; i+=8) {
 
   li.innerHTML = `
     <div class="icon-wrapper">
-      <img src="/icons/${icon}.png" width="36" height="36" alt="${description}" class="weather-icon" title="${description}">
+      <img src="/Weather App/icons/${icon}.png" width="36" height="36" alt="${description}" class="weather-icon" title="${description}">
       <span class="span">
         <p class="title-2">${parseInt(temp_max)}&deg;</p>
       </span>
